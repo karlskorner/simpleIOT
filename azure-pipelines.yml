@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'Old-HCL'
+    applications: '2433ac8c-4059-e811-9423-002590ac753d'
+    scanname: 'AltoroMutual-Web'
+    scantype: 'dynamic'
+    scanURL: 'http://demo.testfire.net/'
+    type: 'production'
+    optimization: 'fastest'
+    dynamicuser: 'jsmith'
+    dynamicloginpassword: 'demo1234'
+    suspend: false
