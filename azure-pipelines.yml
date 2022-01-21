@@ -21,4 +21,4 @@ steps:
     optimization: 'fastest'
     dynamicuser: 'jsmith'
     dynamicloginpassword: 'demo1234'
-    suspend: false
+    suspend: true
