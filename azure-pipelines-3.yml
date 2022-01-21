@@ -25,7 +25,7 @@ steps:
     scanname: 'altoro'
     scantype: 'dynamic'
     dynamicType: 'DAST'
-    scanURL: 'http://demo.testfire.com'
+    scanURL: 'http://demo.testfire.net'
     type: 'production'
     loginMethod: 'None'
     network: 'public'
