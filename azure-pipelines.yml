@@ -20,4 +20,4 @@ steps:
     scanURL: 'http://demo.testfire.net'
     type: 'production'
     loginMethod: 'None'
-    network: 'private'
+    network: 'public'
