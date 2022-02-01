@@ -20,4 +20,5 @@ steps:
     scanURL: 'http://demo.testfire.net'
     type: 'production'
     loginMethod: 'None'
-    network: 'public'
+    network: 'private'
+    dynamicpresence: '63f3f1bd-3137-ec11-981f-2818780a5d7b'
