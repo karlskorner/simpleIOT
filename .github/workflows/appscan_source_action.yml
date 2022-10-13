@@ -22,5 +22,5 @@ jobs:
         with:
           name: appscan-source-results
           path: |
-            .appscan_source/docker_scan_altoroJ.ozasmt
+            .appscan_source/SimpleIOT.paf.ozasmt
             .appscan_source/scan_report.pdf
