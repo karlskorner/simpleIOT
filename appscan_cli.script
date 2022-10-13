@@ -1,0 +1,5 @@
+login
+oa /github/workspace/SimpleIOT.paf
+scan /github/workspace/.appscan_source/SimpleIOT.paf.ozasmt
+report "OWASP Top 10 2021" pdf-summary /github/workspace/.appscan_source/scan_report.pdf
+quit
