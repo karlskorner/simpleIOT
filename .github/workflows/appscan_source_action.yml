@@ -11,7 +11,7 @@ jobs:
       - name: Run AppScan Source scan
         uses: coadaflorin/source-action@main
         with:
-          script-file: simpleIOT/.github/workflows/scan.script   #the name & location of your script file relative to your repo
+          script-file: appscan_cli.script
         env:
             AS_LICENSE_TYPE: 'CLS'
             AS_LICENSE_SERVER_ID: ${{secrets.SERVER_ID}}
