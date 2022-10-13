@@ -14,7 +14,7 @@ jobs:
           script-file: simpleIOT/.github/workflows/scan.script   #the name & location of your script file relative to your repo
         env:
             AS_LICENSE_TYPE: 'CLS'
-            AS_LICENSE_SERVER_ID: ${{secrets.SERVER_ID}}
-			      AS_LICENSE_SERVER: ${{secrets.LICENSE_SERVER}}
-            AS_INSTALL_MODE: 'standalone'
+	    AS_LICENSE_SERVER_ID: ${{secrets.SERVER_ID}}
+	    AS_LICENSE_SERVER: ${{secrets.LICENSE_SERVER}}
+	    AS_INSTALL_MODE: 'standalone'
 			
