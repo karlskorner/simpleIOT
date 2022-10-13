@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Run AppScan Source scan
-        uses: coadaflorin/source-action@main
+        uses: kjweinert/source-docker@main
         with:
           script-file: appscan_cli.script
         env:
