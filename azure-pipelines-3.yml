@@ -22,7 +22,7 @@ steps:
   inputs:
     AppSecTestService: 'Old-HCL'
     applications: '2433ac8c-4059-e811-9423-002590ac753d'
-    scanname: 'altoro'
+    scanname: 'altoro-web-yml-3'
     scantype: 'dynamic'
     dynamicType: 'DAST'
     scanURL: 'http://demo.testfire.net'
