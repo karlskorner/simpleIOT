@@ -13,9 +13,9 @@ jobs:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           publish_on_merge: true
-          application_id: 6c058381-17ca-e711-8de5-002590ac753d
+          application_id: 2433ac8c-4059-e811-9423-002590ac753d
           issue_status: "inprogress"
-          scan_base_name: "CodeSweep"
+          scan_base_name: "ASoC"
           personal_scan: true
       - uses: actions/upload-artifact@v3
         with:
