@@ -7,8 +7,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
       - name: scan bee
         uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.5
         with:
@@ -16,3 +14,5 @@ jobs:
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: d3a522df-bde0-4757-a4a8-b53ac51d707c
           wait_for_analysis: true
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
