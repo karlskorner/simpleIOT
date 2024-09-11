@@ -14,5 +14,3 @@ jobs:
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: d3a522df-bde0-4757-a4a8-b53ac51d707c
           wait_for_analysis: true
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
