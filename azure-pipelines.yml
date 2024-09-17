@@ -12,7 +12,7 @@ pool:
 steps:
 - task: HCLAppScanOnCloud@2
   inputs:
-    AppSecTestService: 'EU-DC'
+    AppSecTestService: 'EU_DC'
     applications: '20ea6185-a151-4147-aeb4-b30b5c1850bc'
     scanname: 'altoroj-web-PL-0'
     scantype: 'dynamic'
