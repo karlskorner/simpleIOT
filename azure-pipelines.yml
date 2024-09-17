@@ -1,6 +1,6 @@
 # Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
+# Add steps that build, run tests, deploy, and more:aaa
 # https://aka.ms/yaml
 
 trigger:
@@ -12,7 +12,7 @@ pool:
 steps:
 - task: HCLAppScanOnCloud@2
   inputs:
-    AppSecTestService: 'EU_DC'
+    AppSecTestService: 'EU-DC'
     applications: '20ea6185-a151-4147-aeb4-b30b5c1850bc'
     scanname: 'altoroj-web-PL-0'
     scantype: 'dynamic'
