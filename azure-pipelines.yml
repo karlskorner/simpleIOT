@@ -12,8 +12,8 @@ pool:
 steps:
 - task: HCLAppScanOnCloud@2
   inputs:
-    AppSecTestService: 'Old-HCL'
-    applications: '2433ac8c-4059-e811-9423-002590ac753d'
+    AppSecTestService: 'EU'
+    applications: '20ea6185-a151-4147-aeb4-b30b5c1850bc'
     scanname: 'altoroj-web-PL-0'
     scantype: 'dynamic'
     dynamicType: 'DAST'
