@@ -16,16 +16,7 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
+    ls -lR
+    ls -lR ..
   displayName: 'Run a multi-line script'
 
-- task: HCLAppScanOnCloud@2
-  inputs:
-    AppSecTestService: 'Old-HCL'
-    applications: '2433ac8c-4059-e811-9423-002590ac753d'
-    scanname: 'altoro-web-yml-3'
-    scantype: 'dynamic'
-    dynamicType: 'DAST'
-    scanURL: 'http://demo.testfire.net'
-    type: 'production'
-    loginMethod: 'None'
-    network: 'public'
