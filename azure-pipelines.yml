@@ -23,6 +23,6 @@ steps:
     scanname: 'Altoro-Azure-Scanfile'
     scantype: 'dynamic'
     dynamicType: 'DASTFile'
-    scanfile: '4bd77f71-9c46-4cbf-9f90-2b2b673bd43d.scan'
+    scanfile: 'altorj.scan'
     networkFile: 'public'
     intervention: false
