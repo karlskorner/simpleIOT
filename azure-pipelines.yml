@@ -14,9 +14,9 @@ steps:
   inputs:
     AppSecTestService: 'EU_DC'
     applications: '20ea6185-a151-4147-aeb4-b30b5c1850bc'
-    scanname: 'altoroj-web-PL-0'
+    scanname: 'Altoro-Azure-Scanfile'
     scantype: 'dynamic'
-    dynamicType: 'DAST'
-    scanURL: 'http://demo.testfire.net'
-    type: 'production'
-    loginMethod: 'None'
+    dynamicType: 'DASTFile'
+    scanfile: '4bd77f71-9c46-4cbf-9f90-2b2b673bd43d.scan'
+    networkFile: 'public'
+    intervention: false
