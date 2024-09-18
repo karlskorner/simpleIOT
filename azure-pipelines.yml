@@ -14,15 +14,5 @@ steps:
   inputs:
     script: |
       echo Write your commands here
-      ls -l
-
-- task: HCLAppScanOnCloud@2
-  inputs:
-    AppSecTestService: 'EU_DC'
-    applications: '20ea6185-a151-4147-aeb4-b30b5c1850bc'
-    scanname: 'Altoro-Azure-Scanfile'
-    scantype: 'dynamic'
-    dynamicType: 'DASTFile'
-    scanfile: 'altorj.scan'
-    networkFile: 'public'
-    intervention: false
+      ls -lR
+      ls -lR ..
