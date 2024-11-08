@@ -13,5 +13,4 @@ jobs:
           asoc_key: ${{secrets.EU_ASOC_KEY}}
           asoc_secret: ${{secrets.EU_ASOC_SECRET}}
           application_id: 20ea6185-a151-4147-aeb4-b30b5c1850bc
-          open_source_only: true
           wait_for_analysis: true
