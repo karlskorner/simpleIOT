@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: scan bee
+      - name: HCL AppScan SAST on US DC
         uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.6
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
