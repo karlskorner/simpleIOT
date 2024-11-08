@@ -10,7 +10,7 @@ jobs:
       - name: scan bee
         uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.6
         with:
-          asoc_key: ${{secrets.EU_ASOC_KEY}}
-          asoc_secret: ${{secrets.EU_ASOC_SECRET}}
+          asoc_key: ${{secrets.ASOC_KEY}}
+          asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: 20ea6185-a151-4147-aeb4-b30b5c1850bc
           wait_for_analysis: true
