@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: HCL AppScan SAST on EU DC
-        uses: kjweinert/karls-sast-action@Testfix
+        uses: kjweinert/karls-sast-action@v1.1
         with:
           asoc_key: ${{secrets.EU_ASOC_KEY}}
           asoc_secret: ${{secrets.EU_ASOC_SECRET}}
