@@ -1,6 +1,8 @@
 name: "HCL AppScan SAST on EU DC"
 on:
   workflow_dispatch
+env:
+  INPUT_SERVICE_URL: https://eu.cloud.appscan.com
 jobs:
   scan:
     runs-on: ubuntu-latest
