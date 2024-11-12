@@ -1,8 +1,6 @@
 name: "HCL AppScan SAST on EU DC"
 on:
   workflow_dispatch
-env:
-  INPUT_SERVICE_URL: https://eu.cloud.appscan.com
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -15,4 +13,5 @@ jobs:
           asoc_key: ${{secrets.EU_ASOC_KEY}}
           asoc_secret: ${{secrets.EU_ASOC_SECRET}}
           application_id: 20ea6185-a151-4147-aeb4-b30b5c1850bc
+          service_url: https://eu.cloud.appscan.com
           wait_for_analysis: true
