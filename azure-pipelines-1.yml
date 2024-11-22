@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: HCLAppScan@1
+  inputs:
+    AppSecTestService: 'not-hcl'
+    applications: '2433ac8c-4059-e811-9423-002590ac753d'
+    scanname: 'Azure-test-yml-1'
+    scantype: 'dynamic'
+    scanURL: 'http://10.134.199.142:8080/altoromutual'
+    dynamicuser: 'jsmith'
+    dynamicloginpassword: 'demo1234'
+    dynamicpresence: 'edc1539a-20c1-e811-a461-002590ac753d'
