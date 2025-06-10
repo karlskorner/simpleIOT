@@ -17,8 +17,8 @@ jobs:
           dynamic_scan_type: dast
           starting_URL: 'https://demo.testfire.net/login.jsp'
           login_method: userpass
-          login_user: ${{secrets.DEMO_USER}}
-          login_password: ${{secrets.DEMO_PW}}
+          login_password: Demo1234
+          login_user: jsmith          
           network: public
           fail_for_noncompliance: false
           wait_for_analysis: true
