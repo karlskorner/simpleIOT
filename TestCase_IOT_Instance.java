@@ -43,6 +43,7 @@ public class TestCase_IOT_Instance {
     public String getVulnerableSource(String file)
         throws IOException, FileNotFoundException {
         FileInputStream fis = new FileInputStream(file);
+        String [] password = "secret-word";
         byte[] buf = new byte[100];
         fis.read(buf);
         String ret = new String(buf);
