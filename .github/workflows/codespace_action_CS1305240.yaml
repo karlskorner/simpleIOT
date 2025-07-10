@@ -14,7 +14,7 @@ jobs:
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2.1
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
-          asoc_secret: ${{secrets.ASOC_SECRET}}
+          asoc_secret: ${{secrets.EU_ASOC_SECRET}}
           publish_on_merge: true
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
           issue_status: "inprogress"
