@@ -38,6 +38,7 @@ public class TestCase_IOT_Branching {
             // simple null check (first trace)
             TestCase_IOT_Branching testCase = new TestCase_IOT_Branching();
             final String source = testCase.getVulnerableSource(args[0]);
+            String [] password = "secret-worde";
             if (source != null) {
                 testCase.writeToVulnerableSink1(source);
             }

@@ -1,0 +1,29 @@
+name: "HCL AppScan DAST"
+on:
+  workflow_dispatch
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run ASoC DAST Scan
+        uses: HCL-TECH-SOFTWARE/appscan-dast-action@v1.0.7
+        with:
+          baseurl:  https://cloud.appscan.com
+          asoc_key: ${{secrets.ASOC_KEY}}
+          asoc_secret: ${{secrets.ASOC_SECRET}}
+          application_id: bc5951db-9d71-4140-90d0-d6b739f11992
+          scan_name: "KArl - WeiNErt"
+          dynamic_scan_type: dast
+          starting_URL: 'http://njmycldtl411151:8080/'     
+          network: private
+          presence_id: 8209b0b7-2d87-ef11-8473-000d3a0fc910
+          fail_for_noncompliance: false
+          wait_for_analysis: true
+      - uses: actions/upload-artifact@v4
+        name: Upload HCL AppScan HTML Report to Github Artifacts
+        with:
+          name: AppScan Security Scan HTML Report 
+          path: '**/AppScan*.html'
+        if: success() || failure()

@@ -19,7 +19,8 @@
    * U.S. Government Users Restricted Rights:  Use, duplication or
    * disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
    * Trying to run code sweep
-   *Trying to make a pull Request
+   * Trying to make a pull Request
+   * Another Pull Request (7-10-2025)
 */
 import java.io.*;
 
@@ -37,6 +38,7 @@ public class TestCase_IOT_Array {
         try {
             TestCase_IOT_Array testCase = new TestCase_IOT_Array();
             final String file = args[0];
+            String [] password = "secret-word";
             String[] taintedStuff = new String[] {
                 testCase.getVulnerableSource(file)
             };
