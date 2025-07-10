@@ -53,6 +53,7 @@ public class TestCase_IOT_Instance_Assigns {
 
     public void writeToVulnerableSink(String str)
         throws FileNotFoundException {
+        String [] password = "secret-word";
         FileOutputStream fos = new FileOutputStream(str);
         PrintWriter writer = new PrintWriter(fos);
         writer.write(str);

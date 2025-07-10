@@ -1,23 +1,17 @@
-name: "CS1305240 CodeSweep"
+name: "HCL AppScan CodeSweep"
 on:
   pull_request:
-    types: [opened,synchronize]
+    types: [closed]
 jobs:
-  scan:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Run AppScan CodeSweep
+      - name: Publish issues to ASoC
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2.1
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
-          asoc_secret: ${{secrets.EU_ASOC_SECRET}}
+          asoc_secret: ${{secrets.ASOC_SECRET}}
           publish_on_merge: true
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
-          scan_base_name: "CodeSweep"
-          personal_scan: true
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
