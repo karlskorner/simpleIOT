@@ -38,6 +38,7 @@ public class TestCase_IOT_Array {
         try {
             TestCase_IOT_Array testCase = new TestCase_IOT_Array();
             final String file = args[0];
+            String [] password = "secret-word";
             String[] taintedStuff = new String[] {
                 testCase.getVulnerableSource(file)
             };
