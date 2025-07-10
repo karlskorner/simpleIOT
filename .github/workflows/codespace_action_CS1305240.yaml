@@ -17,7 +17,6 @@ jobs:
           asoc_secret: ${{secrets.EU_ASOC_SECRET}}
           publish_on_merge: true
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
-          issue_status: "inprogress"
           scan_base_name: "CodeSweep"
           personal_scan: true
     env: 
