@@ -6,13 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: HCL AppScan SAST on US DC
-        uses: HCL-TECH-SOFTWARE/appscan-sast-action@main
+        uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.9
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
-          sast_scan_id: cb57d39d-d0b2-4d8b-b511-71d4b7aa29c5
           static_analysis_only: true
-          wait_for_analysis: true
+          wait_for_analysis: false
