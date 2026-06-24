@@ -4,9 +4,11 @@ on:
 jobs:
   scan:
     runs-on: ubuntu-latest
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
       - name: HCL AppScan SAST on US DC
         uses: HCL-TECH-SOFTWARE/appscan-sast-action@vmain
         with:
