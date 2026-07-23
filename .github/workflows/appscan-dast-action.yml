@@ -16,7 +16,7 @@ jobs:
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
           scan_name: "KArl - WeiNErt"
           dynamic_scan_type: dast
-          starting_URL: "https://sapa-webapp-saptwo-qa.azurewebsites.net/"     
+          starting_URL: "https://demo.testfire.net/"
           network: private
           fail_for_noncompliance: false
           wait_for_analysis: true
