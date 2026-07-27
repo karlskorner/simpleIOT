@@ -19,7 +19,7 @@ jobs:
           starting_URL: "https://demo.testfire.net"
           network: private
           presence_id: 8209b0b7-2d87-ef11-8473-000d3a0fc910
-          login_sequence_file: ./my.config
+          login_sequence_file: ./secrets/dast.config
           fail_for_noncompliance: false
           wait_for_analysis: true
       - uses: actions/upload-artifact@v4
