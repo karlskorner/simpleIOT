@@ -15,5 +15,5 @@ jobs:
           scan_name: ASOC-Test-33/merge-47
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
           static_analysis_only: true
-          sast_scan_id: baaae2a9-a8d3-46a6-b873-47bf8f0fe687
+          sca_scan_id: 61ca15d8-82cc-47e2-a534-2841976bb8cb
           wait_for_analysis: true
