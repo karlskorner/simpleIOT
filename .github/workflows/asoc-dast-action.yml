@@ -1,4 +1,4 @@
-name: "HCL AppScan DAST "
+name: "HCL AppScan DAST Action"
 on:
   workflow_dispatch
 jobs:
