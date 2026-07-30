@@ -15,5 +15,12 @@ jobs:
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
           sast_scan_id: baaae2a9-a8d3-46a6-b873-47bf8f0fe687
           sca_scan_id: 61ca15d8-82cc-47e2-a534-2841976bb8cb
-          static_analysis_only: true
-          wait_for_analysis: false
+          wait_for_analysis: true
+          acceptssl: false
+          personal_scan: false
+          incremental_scan: false
+          static_analysis_only: false
+          open_source_only: false
+          secrets_only: false
+          scan_build_outputs: false
+          analysis_timeout_minutes: 30
