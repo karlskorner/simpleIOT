@@ -8,5 +8,5 @@ jobs:
         uses: actions/checkout@v7.0.1
       - name: "do ls"
         if: always()
-        run: ls -lar
+        run: ls -laR
         
