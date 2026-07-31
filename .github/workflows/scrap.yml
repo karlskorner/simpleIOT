@@ -1,0 +1,12 @@
+name: "Scrap Script"
+on: workflow_dispatch
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+      - name: "do ls"
+        if: always()
+        run: ls -lar
+        
