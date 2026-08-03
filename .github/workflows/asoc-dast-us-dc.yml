@@ -6,7 +6,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Run ASoC DAST Scan
-        uses: karlskorner/appscan-dast-action@main
+        uses: karlskorner/forked-dast-action@main
         with:
           baseurl:  https://cloud.appscan.com
           asoc_key: ${{secrets.ASOC_KEY}}
