@@ -5,8 +5,6 @@ jobs:
   scan:
     runs-on: self-hosted
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7.0.1
       - name: Run ASoC DAST Scan
         uses: karlskorner/appscan-dast-action@main
         with:
