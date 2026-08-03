@@ -14,15 +14,12 @@ jobs:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
-          login_method: recorded
-          login_sequence_file: ./loginfiles/dast.config
           scan_name: "DAST from GitHub"
           dynamic_scan_type: dast
           starting_URL: https://demo.testfire.net
           fail_for_noncompliance: false
           wait_for_analysis: false
           network: private
-          presence_id: 8209b0b7-2d87-ef11-8473-000d3a0fc910
       - uses: actions/upload-artifact@v7.0.1
         name: Upload HCL AppScan HTML Report to Github Artifacts
         with:
