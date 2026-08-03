@@ -20,9 +20,3 @@ jobs:
           wait_for_analysis: true
           network: private
           presence_id: 8209b0b7-2d87-ef11-8473-000d3a0fc910
-      - uses: actions/upload-artifact@v7.0.1
-        name: Upload HCL AppScan HTML Report to Github Artifacts
-        with:
-          name: AppScan Security Scan HTML Report 
-          path: '**/AppScan*.html'
-        if: success() || failure()
