@@ -5,6 +5,8 @@ jobs:
   scan:
     runs-on: self-hosted
     steps:
+      - name: PWVER
+        run: Get-Host | Select-Object Version
       - name: Checkout
         uses: actions/checkout@v7.0.1
       - name: Run ASoC DAST Scan
