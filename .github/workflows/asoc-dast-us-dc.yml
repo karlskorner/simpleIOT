@@ -12,10 +12,9 @@ jobs:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
-          login_sequence_file: ./loginfiles/dast.config
           scan_name: "DAST from GitHub"
           dynamic_scan_type: dast
-          starting_URL: ${{vars.STARTING_URL}}
+          starting_URL: http://demo.estfire.net
           fail_for_noncompliance: false
           wait_for_analysis: false
           network: private
