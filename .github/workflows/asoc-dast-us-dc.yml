@@ -7,7 +7,7 @@ jobs:
     environment: K1
     steps:
       - name: Run ASoC DAST Scan
-        uses: HCL-TECH-SOFTWARE/appscan-dast-action@v1.0.7
+        uses: karlskorner/forked-dast-action@main
         with:
           baseurl:  https://cloud.appscan.com
           asoc_key: ${{secrets.KARLS_KEY}}
