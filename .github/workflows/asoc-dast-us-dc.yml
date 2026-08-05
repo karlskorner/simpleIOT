@@ -15,7 +15,7 @@ jobs:
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
           scan_name: "KARLS_GitHub-Action"
           dynamic_scan_type: dast
-          starting_URL: https://demo.testfire.net
+          starting_URL: https://demo.testfire.net?mode=demo
           fail_for_noncompliance: false
           wait_for_analysis: false
           network: private
