@@ -3,7 +3,8 @@ on:
   workflow_dispatch
 jobs:
   scan:
-    runs-on: windows-2022
+    runs-on: self-hosted
+    environment: K1
     steps:
       - name: Run ASoC DAST Scan
         uses: HCL-TECH-SOFTWARE/appscan-dast-action@v1.0.7
@@ -12,9 +13,9 @@ jobs:
           asoc_key: ${{secrets.KARLS_KEY}}
           asoc_secret: ${{secrets.KARLS_SECRET}}
           application_id: 140d8adb-be8b-4d24-a7a0-dce1670c0427
-          scan_name: "SES-DAST"
+          scan_name: "KARLS_GitHub-Action"
           dynamic_scan_type: dast
-          starting_URL: https://sesqa.myhcl.com/
+          starting_URL: https://demo.testfire.net
           fail_for_noncompliance: false
           wait_for_analysis: false
           network: private
