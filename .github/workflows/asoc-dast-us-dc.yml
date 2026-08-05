@@ -9,8 +9,8 @@ jobs:
         uses: HCL-TECH-SOFTWARE/appscan-dast-action@v1.0.7
         with:
           baseurl:  https://cloud.appscan.com
-          asoc_key: ${{secrets.ASOC_KEY}}
-          asoc_secret: ${{secrets.ASOC_SECRET}}
+          asoc_key: ${{secrets.KARLS_KEY}}
+          asoc_secret: ${{secrets.KARLS_SECRET}}
           application_id: 140d8adb-be8b-4d24-a7a0-dce1670c0427
           scan_name: "SES-DAST"
           dynamic_scan_type: dast
