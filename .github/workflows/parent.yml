@@ -1,0 +1,11 @@
+name: Parent
+
+on:
+  workflow_dispatch
+
+jobs:
+  run-child:
+    # Syntax for referencing a file in the same repository:
+    uses: ./.github/workflows/child-workflow.yml
+    with:
+      environment_name: "K1"
