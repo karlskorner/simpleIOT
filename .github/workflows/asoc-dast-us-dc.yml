@@ -3,7 +3,7 @@ on:
   workflow_dispatch
 jobs:
   scan:
-    runs-on: self-hosted
+    runs-on: [self-hosted, k2]
     environment: K1
     steps:
       - name: Run ASoC DAST Scan
