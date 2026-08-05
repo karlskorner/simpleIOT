@@ -3,19 +3,19 @@ on:
   workflow_dispatch
 jobs:
   scan:
-    runs-on: self-hosted
+    runs-on: eds-non-prod
     steps:
       - name: Run ASoC DAST Scan
-        uses: karlskorner/forked-dast-action@main
+        uses: HCL-TECH-SOFTWARE/appscan-dast-action@v1.0.7
         with:
           baseurl:  https://cloud.appscan.com
-          asoc_key: ${{secrets.ASOC_KEYs}}
-          asoc_secret: ${{secrets.ASOC_SECRETs}}
-          application_id: bc5951db-9d71-4140-90d0-d6b739f11992
-          scan_name: "DAST from GitHub"
+          asoc_key: ${{secrets.ASOC_KEY}}
+          asoc_secret: ${{secrets.ASOC_SECRET}}
+          application_id: 140d8adb-be8b-4d24-a7a0-dce1670c0427
+          scan_name: "SES-DAST"
           dynamic_scan_type: dast
-          starting_URL: http://demo.estfire.net
+          starting_URL: https://sesqa.myhcl.com/
           fail_for_noncompliance: false
           wait_for_analysis: false
           network: private
-          presence_id: 8209b0b7-2d87-ef11-8473-000d3a0fc910
+          presence_id: 0dc28465-148b-f111-b337-000d3a7b22dd
