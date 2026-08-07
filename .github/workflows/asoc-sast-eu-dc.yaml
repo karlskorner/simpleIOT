@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: HCL AppScan SAST on EU DC
-        uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.6
+        uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.1.0
         with:
           asoc_key: ${{secrets.KARLS_EU_KEY_ID}}
           asoc_secret: ${{secrets.KARLS_EU_KEY_SECRET}}
