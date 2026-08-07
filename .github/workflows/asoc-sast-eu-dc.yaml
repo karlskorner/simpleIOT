@@ -4,6 +4,8 @@ on:
 jobs:
   scan:
     runs-on: ubuntu-latest
+    environment: 
+      name: "EU_DC"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
