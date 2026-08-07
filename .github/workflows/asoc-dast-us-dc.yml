@@ -4,7 +4,7 @@ on:
 jobs:
   scan:
     runs-on: [self-hosted, k2]
-    environment: K1
+    environment: US_DC
     steps:
       - name: Run ASoC DAST Scan
         uses: karlskorner/forked-dast-action@main
