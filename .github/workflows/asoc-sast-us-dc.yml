@@ -3,7 +3,7 @@ on:
   workflow_dispatch
 jobs:
   scan:
-    runs-on: windows-2022
+    runs-on: self-hosted
     environment: US_DC
     steps:
       - name: Checkout
