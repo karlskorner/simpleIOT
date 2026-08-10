@@ -10,8 +10,8 @@ jobs:
         uses: karlskorner/forked-dast-action@main
         with:
           baseurl:  https://blmycldtl391121.appscan.sec
-          asoc_key: ${{secrets.KARLS_KEY}}
-          asoc_secret: ${{secrets.KARLS_SECRET}}
+          T_KEY: ${{secrets.KARLS_KEY}}
+          T_SECRET: ${{secrets.KARLS_SECRET}}
           application_id: bc5951db-9d71-4140-90d0-d6b739f11992
           scan_name: "KARLS_GitHub-Action"
           dynamic_scan_type: dast
